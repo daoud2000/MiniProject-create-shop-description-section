@@ -1,0 +1,336 @@
+
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fourth {
+    width: 100%;
+    background-color: #FFF8F3;
+}
+
+.fourth .container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.fourth .container .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 40px;
+    column-gap: 35px;
+    align-items: center;
+}
+
+/* =========================
+   IMAGE SECTION
+========================= */
+
+.img-div {
+    position: relative;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #D3C3C066;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.img-div > img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Desktop image box */
+
+.img-div .bot-box {
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    right: -25px;
+    background-color: #2B1B17;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    width: 32%;
+}
+
+.Est {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: -0.28px;
+    color: #FFDCC2;
+    display: inline-block;
+}
+
+.craft {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.72px;
+    color: #D3C3C0;
+    display: inline-block;
+}
+
+/* Mobile image box */
+
+.img-div .bot-box2 {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+    background-color: #2B1B17E5;
+    border-radius: 12px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4px 10px;
+}
+
+.Est2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.72px;
+    color: #FFF8F3;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.coffe-disc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.firstp {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    background-color: #F6ECE2;
+    border: 1px solid #D3C3C080;
+    color: #845326;
+    border-radius: 12px;
+    padding: 6px 14px;
+    width: fit-content;
+}
+
+.secondp {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: -0.4px;
+    color: #0E0402;
+}
+
+.thirdp {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #2B1B17;
+}
+
+/* =========================
+   COLLECTIONS
+========================= */
+
+.coffe-disc .collections {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+/* Desktop collections */
+
+.collections .collection {
+    display: flex;
+    column-gap: 12px;
+    align-items: flex-start;
+}
+
+.collection p {
+    flex: 1;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    line-height: 1.6;
+}
+
+.col-disc {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+}
+
+/* Mobile collections */
+
+.collections .collection-s {
+    display: none;
+    column-gap: 12px;
+    align-items: flex-start;
+    background-color: #FCF2E8;
+    border: 1px solid #D3C3C033;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.collection-s p {
+    flex: 1;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.black-btn,
+.white-btn {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.56px;
+    border: none;
+    height: 46px;
+    cursor: pointer;
+}
+
+.black-btn {
+    color: #FFF8F3;
+    background-color: #2B1B17;
+    width: 30%;
+    display: block;
+}
+
+.white-btn {
+    color: #0E0402;
+    background-color: #F6ECE2;
+    width: 70%;
+    display: none;
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 1000px) {
+
+    .fourth .container .grid {
+        column-gap: 25px;
+        padding: 25px;
+    }
+
+    .secondp {
+        font-size: 32px;
+    }
+
+    .black-btn {
+        width: 50%;
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Grid */
+
+    .fourth .container .grid {
+        grid-template-columns: 1fr;
+        row-gap: 45px;
+        padding: 15px;
+    }
+
+    /* Image boxes */
+
+    .bot-box {
+        display: none !important;
+    }
+
+    .img-div .bot-box2 {
+        display: flex;
+    }
+
+    /* Collections */
+
+    .collections .collection {
+        display: none;
+    }
+
+    .collections .collection-s {
+        display: flex;
+    }
+
+    /* Buttons */
+
+    .black-btn {
+        display: none;
+    }
+
+    .white-btn {
+        display: block;
+        width: 100%;
+    }
+
+    /* Text */
+
+    .coffe-disc {
+        row-gap: 20px;
+    }
+
+    .secondp {
+        font-size: 30px;
+    }
+
+    .thirdp {
+        font-size: 14px;
+    }
+
+    .collection-s p {
+        font-size: 13px;
+    }
+
+}
+
+/* =========================
+   VERY SMALL SCREENS
+========================= */
+
+@media (max-width: 400px) {
+
+    .secondp {
+        font-size: 26px;
+    }
+
+    .fourth .container .grid {
+        padding: 10px;
+    }
+
+    .Est2 {
+        font-size: 11px;
+    }
+
+}
