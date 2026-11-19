@@ -1,7 +1,5 @@
 
-/* =========================
-   GENERAL
-========================= */
+
 
 * {
     margin: 0;
@@ -27,9 +25,7 @@
     align-items: center;
 }
 
-/* =========================
-   IMAGE SECTION
-========================= */
+
 
 .img-div {
     position: relative;
@@ -47,7 +43,7 @@
     object-fit: cover;
 }
 
-/* Desktop image box */
+
 
 .img-div .bot-box {
     position: absolute;
@@ -81,7 +77,7 @@
     display: inline-block;
 }
 
-/* Mobile image box */
+
 
 .img-div .bot-box2 {
     position: absolute;
@@ -105,9 +101,7 @@
     color: #FFF8F3;
 }
 
-/* =========================
-   DESCRIPTION
-========================= */
+
 
 .coffe-disc {
     display: flex;
@@ -145,9 +139,7 @@
     color: #2B1B17;
 }
 
-/* =========================
-   COLLECTIONS
-========================= */
+
 
 .coffe-disc .collections {
     display: flex;
@@ -179,7 +171,7 @@
     letter-spacing: 0.56px;
 }
 
-/* Mobile collections */
+
 
 .collections .collection-s {
     display: none;
@@ -199,9 +191,7 @@
     line-height: 1.6;
 }
 
-/* =========================
-   BUTTONS
-========================= */
+
 
 .black-btn,
 .white-btn {
@@ -229,9 +219,7 @@
     display: none;
 }
 
-/* =========================
-   TABLETS
-========================= */
+
 
 @media (max-width: 1000px) {
 
@@ -250,9 +238,7 @@
 
 }
 
-/* =========================
-   MOBILE
-========================= */
+
 
 @media (max-width: 768px) {
 
@@ -315,9 +301,7 @@
 
 }
 
-/* =========================
-   VERY SMALL SCREENS
-========================= */
+
 
 @media (max-width: 400px) {
 
